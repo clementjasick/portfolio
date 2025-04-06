@@ -90,37 +90,70 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>A propos de moi</h2>
-    <p>J'ai passé mon bac dans le campus de Coulommiers, j'ai fait un bac générale option Mathématiques et numériques et sciences de l'informatiqueoption dans laquelle j'ai decouvert ma passion pour l'informatique et dans laquelle j'ai choisi de poursuivre mes études dans ce domaine.
+    <p>J'ai passé mon bac dans le campus de Coulommiers, j'ai fait un bac générale option Mathématiques et numériques et sciences de l'informatique option dans laquelle j'ai decouvert ma passion pour l'informatique et dans laquelle j'ai choisi de poursuivre mes études dans ce domaine.
       J'ai essaye de poursuivre avec une licence de math-info mais je n'ai pas aimé la maniere de travaille en universite et je me suis reoriente en BTS sio. 
       je suis actuellement élève en 2e année du Bts sio option Slam dans le lycee Léonard de Vinci </p>
   </div><!-- End Section Title -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row gy-4 justify-content-center">
-      <div class="col-lg-4">
-        <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
-      </div>
-      <div class="col-lg-4 content">
-        <h2>Developpeur</h2>
-        <p class="fst-italic py-3">
-          Mes passe temps en dehors du BTS sont le sport comme la musculation ou encore le football dans lequelle je passe la plupart de mon temps 
-        </p>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Date de Naissance:</strong> <span>04 Fevrier 2004</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Numéro:</strong> <span>06 24 26 54 33</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Chauffry</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Diplôme:</strong> <span>BTS SIO</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>jasick.clement@gmail.com</span></li>
-            </ul>
-          </div>
+  <style>
+    /* Style pour aligner le CV et la photo dans la section À propos */
+    .about-section-container {
+      display: flex;
+      align-items: stretch;
+    }
+    
+    .profile-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .cv-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .cv-image {
+      max-height: 380px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    
+    .profile-image {
+      max-height: 380px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+
+  <div class="row gy-4 justify-content-center about-section-container">
+    <div class="col-lg-4 profile-column">
+      <img src="assets/img/my-profile-img.jpg" class="img-fluid profile-image" alt="">
+    </div>
+    <div class="col-lg-4 content">
+      <h2>Developpeur</h2>
+      <p class="fst-italic py-3">
+        Mes passe temps en dehors du BTS sont le sport comme la musculation ou encore le football dans lequelle je passe la plupart de mon temps 
+      </p>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <strong>Date de Naissance:</strong> <span>04 Fevrier 2004</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Numéro:</strong> <span>06 24 26 54 33</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Chauffry</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Diplôme:</strong> <span>BTS SIO</span></li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>jasick.clement@gmail.com</span></li>
+          </ul>
         </div>
       </div>
-      <div class="col-lg-4">
-        <img class="img-fluid rounded-3 mb-4" src="assets/CV L3_page-0001.jpg" alt="cv">
-        <div class="d-grid">
+    </div>
+    <div class="col-lg-4">
+      <div class="cv-container">
+        <img class="img-fluid rounded-3 cv-image" src="assets/CV L3_page-0001.jpg" alt="cv">
+        <div class="d-grid mt-auto">
           <a class="btn btn-outline-primary btn-large text-uppercase" href="assets/CV L3.pdf" target="_blank">
             Voir mon CV
             <span class="material-icons-outlined ms-2"></span>
@@ -128,6 +161,7 @@
         </div>
       </div>
     </div>
+  </div>
     
     <!-- New row for the "Après le BTS" text -->
     <div class="row mt-4">
@@ -255,7 +289,7 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
         <a href="https://clementjasick.github.io/Savonfrontend/" class="portfolio-link">
           <div class="portfolio-wrap">
-            <img src="assets/img/projets/Logo-Sav-App-02.jpeg" class="img-fluid" alt="Projet 1">
+            <img src="assets/img/projets/Logo-Sav-App-02.jpeg" class="img-fluid project-image" alt="Projet 1">
             <div class="portfolio-info">
               <h4>Savon</h4>
             </div>
@@ -266,7 +300,7 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <a href="https://ljules.github.io/sushi-app-localhost/" class="portfolio-link">
           <div class="portfolio-wrap">
-            <img src="assets/img/projets/sushi.jpg" class="img-fluid" alt="Projet 2">
+            <img src="assets/img/projets/sushi.jpg" class="img-fluid project-image" alt="Projet 2">
             <div class="portfolio-info">
               <h4>Sushi</h4>
             </div>
@@ -277,7 +311,7 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-product">
         <a href="https://github.com/clementjasick/KotlinAventureSprint3/blob/master/src/main/kotlin/Main.kt" class="portfolio-link">
           <div class="portfolio-wrap">
-            <img src="assets/img/projets/KOTLING-LOGO-1.webp" class="img-fluid" alt="Projet 3">
+            <img src="assets/img/projets/KOTLING-LOGO-1.webp" class="img-fluid project-image" alt="Projet 3">
             <div class="portfolio-info">
               <h4>Kotlin Aventure</h4>
             </div>
@@ -288,7 +322,7 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
         <a href="https://github.com/fmomika/Pokemon/blob/main/src/Main.kt" class="portfolio-link">
           <div class="portfolio-wrap">
-            <img src="assets/img/projets/simiabraz.png" class="img-fluid" alt="Projet 4">
+            <img src="assets/img/projets/simiabraz.png" class="img-fluid project-image" alt="Projet 4">
             <div class="portfolio-info">
               <h4>Pokemon</h4>
             </div>
@@ -299,7 +333,7 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <a href="https://github.com/clementjasick/Kotlin-projet-Luminaire/blob/main/src/Main.kt" class="portfolio-link">
           <div class="portfolio-wrap">
-            <img src="assets/img/projets/luminaire.webp" class="img-fluid" alt="Projet 5">
+            <img src="assets/img/projets/luminaire.webp" class="img-fluid project-image" alt="Projet 5">
             <div class="portfolio-info">
               <h4>Luminaire</h4>
             </div>
@@ -310,7 +344,7 @@
       <div class="col-lg-4 col-md-6 portfolio-item filter-product">
         <a href="https://github.com/clementjasick/geoworld/blob/main/index2.php" class="portfolio-link">
           <div class="portfolio-wrap">
-            <img src="assets/img/projets/world-logo.png" class="img-fluid" alt="Projet 6">
+            <img src="assets/img/projets/world-logo.png" class="img-fluid project-image" alt="Projet 6">
             <div class="portfolio-info">
               <h4>Geoworld</h4>
             </div>
